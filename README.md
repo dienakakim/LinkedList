@@ -2,7 +2,7 @@
 
 ## Description
 
-This project contains code implementing a generic doubly linked list in Go.
+This project contains code implementing a generic doubly linked list in Go. Takes a placeholder element to use as the list's key type, and requires all argument keys to have that type.
 
 ## Exposed methods
 
