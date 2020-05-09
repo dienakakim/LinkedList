@@ -7,7 +7,7 @@ This project contains code implementing a generic doubly linked list in Go. Take
 ## Exposed methods
 
 ```go
-func NewLinkedList(t interface{}) LinkedList
+func NewLinkedList(key interface{}) LinkedList
 ```
 
 NewLinkedList is a factory function creating a new LinkedList with a given element as its keyType.

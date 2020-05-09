@@ -28,8 +28,8 @@ func newNode(key interface{}) Node {
 }
 
 // NewLinkedList is a factory function creating a new LinkedList with a given element as its keyType.
-func NewLinkedList(t interface{}) LinkedList {
-	l := LinkedList{nil, nil, 0, reflect.TypeOf(t)}
+func NewLinkedList(key interface{}) LinkedList {
+	l := LinkedList{nil, nil, 0, reflect.TypeOf(key)}
 	return l
 }
 
