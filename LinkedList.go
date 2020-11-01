@@ -119,7 +119,6 @@ func (l *LinkedList) InsertAt(index uint, key interface{}) (bool, error) {
 	// shift every node from current onwards to the right,
 	// and insert new node with given key
 	inserted := &Node{current.prev, current, key, reflect.TypeOf(key)}
-	fmt.Println(current)
 	current.prev.next = inserted
 	current.prev = inserted
 	l.size++
@@ -299,7 +298,6 @@ func (l *LinkedList) RemoveAt(index uint) (interface{}, error) {
 
 	// current is the node to be removed, and as it is in the interior,
 	// it has prev and next nodes
-	fmt.Println(current)
 	current.prev.next = current.next // detach prev
 	current.next.prev = current.prev // detach next
 	l.size--
