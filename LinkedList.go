@@ -217,7 +217,7 @@ func (l *LinkedList) RemoveBack() (interface{}, error) {
 	// If l.size == 1, this is the only node in the list
 	var removed *Node
 	if l.size == 1 {
-		removed = l.head
+		removed = l.tail
 		l.head = nil
 		l.tail = nil
 		l.size = 0
